@@ -1,0 +1,1321 @@
+{
+  "users": {
+    "demo-user-elena-vance": {
+      "id": "demo-user-elena-vance",
+      "displayName": "Elena Vance",
+      "email": "elena.vance@example.com",
+      "createdAt": "2026-10-01T17:22:46.275Z",
+      "timezone": "America/New_York",
+      "onboardingCompleted": true,
+      "isDemo": true,
+      "preferences": {
+        "currentRole": "Software Developer & Technical Explorer",
+        "careerInterests": [
+          "Product Engineering",
+          "Systems Architecture",
+          "Developer Experience"
+        ],
+        "existingSkills": [
+          "TypeScript",
+          "React",
+          "Problem Solving"
+        ],
+        "preferredLearningFormat": "hands_on",
+        "weeklyHoursBudget": 6,
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true
+      }
+    },
+    "user-1792083922746-fc7c": {
+      "id": "user-1792083922746-fc7c",
+      "displayName": "Audit User A",
+      "email": "audit.usera.1792083922727@example.com",
+      "createdAt": "2026-10-15T17:05:22.746Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792083922782-coqe": {
+      "id": "user-1792083922782-coqe",
+      "displayName": "Audit User B",
+      "email": "audit.userb.1792083922779@example.com",
+      "createdAt": "2026-10-15T17:05:22.782Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792083970759-9j5s": {
+      "id": "user-1792083970759-9j5s",
+      "displayName": "Disposable User",
+      "email": "disposable.1792083970756@example.com",
+      "createdAt": "2026-10-15T17:06:10.759Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792083978572-tdqb": {
+      "id": "user-1792083978572-tdqb",
+      "displayName": "Audit User A",
+      "email": "audit.usera.1792083978565@example.com",
+      "createdAt": "2026-10-15T17:06:18.572Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792083978594-6pyu": {
+      "id": "user-1792083978594-6pyu",
+      "displayName": "Audit User B",
+      "email": "audit.userb.1792083978591@example.com",
+      "createdAt": "2026-10-15T17:06:18.594Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084060157-473n": {
+      "id": "user-1792084060157-473n",
+      "displayName": "Audit User A",
+      "email": "audit.usera.1792084060141@example.com",
+      "createdAt": "2026-10-15T17:07:40.157Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084060181-egep": {
+      "id": "user-1792084060181-egep",
+      "displayName": "Audit User B",
+      "email": "audit.userb.1792084060179@example.com",
+      "createdAt": "2026-10-15T17:07:40.181Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084111800-ywwr": {
+      "id": "user-1792084111800-ywwr",
+      "displayName": "Audit User A",
+      "email": "audit.usera.1792084111793@example.com",
+      "createdAt": "2026-10-15T17:08:31.800Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084111829-q6mw": {
+      "id": "user-1792084111829-q6mw",
+      "displayName": "Audit User B",
+      "email": "audit.userb.1792084111826@example.com",
+      "createdAt": "2026-10-15T17:08:31.829Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084120293-f3ow": {
+      "id": "user-1792084120293-f3ow",
+      "displayName": "Disposable User",
+      "email": "disposable.1792084120290@example.com",
+      "createdAt": "2026-10-15T17:08:40.293Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084699938-kmrg": {
+      "id": "user-1792084699938-kmrg",
+      "displayName": "Test User Beta",
+      "email": "beta_1792084699929@example.com",
+      "createdAt": "2026-10-15T17:18:19.938Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084772101-5qb8": {
+      "id": "user-1792084772101-5qb8",
+      "displayName": "Test User Beta",
+      "email": "beta_1792084772094@example.com",
+      "createdAt": "2026-10-15T17:19:32.101Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    },
+    "user-1792084966244-9eb3": {
+      "id": "user-1792084966244-9eb3",
+      "displayName": "Test User Beta",
+      "email": "beta_1792084966239@example.com",
+      "createdAt": "2026-10-15T17:22:46.244Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
+    }
+  },
+  "entries": {
+    "demo-entry-1": {
+      "id": "demo-entry-1",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-06",
+      "originalText": "Spent three hours debugging a race condition in our client state synchronizer. I was frustrated at first because the error only reproduced on intermittent network spikes, but when I stepped through the concurrency traces and found the missing queue lock, it felt deeply satisfying. Isolating the root cause made the entire afternoon worth it.",
+      "wordCount": 57,
+      "createdAt": "2026-10-06T17:22:46.275Z",
+      "updatedAt": "2026-10-06T17:22:46.275Z",
+      "analysisStatus": "completed",
+      "analyzedAt": "2026-10-06T17:22:46.275Z",
+      "isDemo": true
+    },
+    "demo-entry-2": {
+      "id": "demo-entry-2",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-08",
+      "originalText": "Attended a two-hour roadmap alignment meeting with cross-functional stakeholders. The circular debate over vague feature requests was exhausting and left me feeling drained. But afterwards, I grabbed a whiteboard and sketched a clear visual user flow linking customer pain points to technical trade-offs. Once everyone could see the journey visually, the tension dissolved.",
+      "wordCount": 58,
+      "createdAt": "2026-10-08T17:22:46.275Z",
+      "updatedAt": "2026-10-08T17:22:46.275Z",
+      "analysisStatus": "completed",
+      "analyzedAt": "2026-10-08T17:22:46.275Z",
+      "isDemo": true
+    },
+    "demo-entry-3": {
+      "id": "demo-entry-3",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-10",
+      "originalText": "Analyzed SQL query logs and user drop-off metrics from last week’s checkout release. I noticed an anomaly where users stalled right before payment confirmation. Rather than just filing a bug ticket, I wrote a one-page synthesis explaining the UX hurdle and suggested a cleaner fallback flow. Digging into the raw data and turning it into a tangible design solution energized me.",
+      "wordCount": 66,
+      "createdAt": "2026-10-10T17:22:46.275Z",
+      "updatedAt": "2026-10-10T17:22:46.275Z",
+      "analysisStatus": "completed",
+      "analyzedAt": "2026-10-10T17:22:46.275Z",
+      "isDemo": true
+    },
+    "demo-entry-4": {
+      "id": "demo-entry-4",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-12",
+      "originalText": "Paired for an hour with a junior frontend engineer who was struggling to understand asynchronous error boundaries in React. Instead of just fixing it for them, we drew out how errors propagate up the component tree and built an interactive sandbox example together. Seeing their eyes light up when the concept clicked reminded me how much I love teaching and translating complex ideas.",
+      "wordCount": 68,
+      "createdAt": "2026-10-12T17:22:46.275Z",
+      "updatedAt": "2026-10-12T17:22:46.275Z",
+      "analysisStatus": "completed",
+      "analyzedAt": "2026-10-12T17:22:46.275Z",
+      "isDemo": true
+    },
+    "demo-entry-5": {
+      "id": "demo-entry-5",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-14",
+      "originalText": "Today I built a complete working prototype of the milestone verification panel with responsive touch states and real data bindings. I tested edge cases like empty states and server timeouts, ensuring the feedback loops feel instant. Shipping a real, usable vertical slice in a single focused day felt fantastic.",
+      "wordCount": 52,
+      "createdAt": "2026-10-14T17:22:46.275Z",
+      "updatedAt": "2026-10-14T17:22:46.275Z",
+      "analysisStatus": "completed",
+      "analyzedAt": "2026-10-14T17:22:46.275Z",
+      "isDemo": true
+    },
+    "entry-1792081852843-vqi8": {
+      "id": "entry-1792081852843-vqi8",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-15",
+      "originalText": "Today I configured PostgreSQL schemas and migrated all table constraints, verifying data integrity under concurrent transactions. I felt deeply satisfied when the query tests passed with zero data anomalies.",
+      "wordCount": 29,
+      "createdAt": "2026-10-15T16:30:52.843Z",
+      "updatedAt": "2026-10-15T16:30:52.843Z",
+      "analysisStatus": "completed",
+      "isDemo": true,
+      "analyzedAt": "2026-10-15T16:36:16.842Z"
+    },
+    "entry-1792082087712-2jnu": {
+      "id": "entry-1792082087712-2jnu",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-15",
+      "originalText": "Today I ran two usability sessions with team members to test the prototype. I took detailed notes on where they got stuck in the payment checkout flow and discovered two unexpected friction points. I synthesized these into action items for our next sprint.",
+      "wordCount": 43,
+      "createdAt": "2026-10-15T16:34:47.712Z",
+      "updatedAt": "2026-10-15T16:34:47.712Z",
+      "analysisStatus": "needs_retry",
+      "isDemo": true,
+      "analysisError": "{\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}"
+    },
+    "entry-1792082608593-pft3": {
+      "id": "entry-1792082608593-pft3",
+      "userId": "demo-user-elena-vance",
+      "entryDate": "2026-10-15",
+      "originalText": "Today I ran two usability sessions with team members to test the prototype. I took detailed notes on where they got stuck in the payment checkout flow and discovered two unexpected friction points. I synthesized these into action items for our next sprint. Finding those subtle UX hurdles felt surprisingly energizing.",
+      "wordCount": 51,
+      "createdAt": "2026-10-15T16:43:28.593Z",
+      "updatedAt": "2026-10-15T16:43:28.593Z",
+      "analysisStatus": "completed",
+      "isDemo": true,
+      "analyzedAt": "2026-10-15T16:45:46.433Z"
+    },
+    "entry-1792083970772-jebs": {
+      "id": "entry-1792083970772-jebs",
+      "userId": "user-1792083970759-9j5s",
+      "entryDate": "2026-10-15",
+      "originalText": "To be deleted reflection.",
+      "wordCount": 4,
+      "createdAt": "2026-10-15T17:06:10.772Z",
+      "updatedAt": "2026-10-15T17:06:10.772Z",
+      "analysisStatus": "analyzing",
+      "isDemo": false
+    },
+    "entry-1792083978601-trso": {
+      "id": "entry-1792083978601-trso",
+      "userId": "user-1792083978572-tdqb",
+      "entryDate": "2026-10-15",
+      "originalText": "User A private confidential architectural decision on database sharding.",
+      "wordCount": 9,
+      "createdAt": "2026-10-15T17:06:18.601Z",
+      "updatedAt": "2026-10-15T17:06:18.601Z",
+      "analysisStatus": "analyzing",
+      "isDemo": false
+    },
+    "entry-1792084120300-e7he": {
+      "id": "entry-1792084120300-e7he",
+      "userId": "user-1792084120293-f3ow",
+      "entryDate": "2026-10-15",
+      "originalText": "To be deleted reflection.",
+      "wordCount": 4,
+      "createdAt": "2026-10-15T17:08:40.300Z",
+      "updatedAt": "2026-10-15T17:08:40.300Z",
+      "analysisStatus": "analyzing",
+      "isDemo": false
+    }
+  },
+  "analyses": {
+    "demo-entry-1": {
+      "id": "analysis-1",
+      "userId": "demo-user-elena-vance",
+      "journalEntryId": "demo-entry-1",
+      "summary": "Investigated and resolved a complex intermittent race condition in client-side state synchronization, feeling energized by finding the root cause.",
+      "tasks": [
+        {
+          "description": "Traced concurrency race condition under network spikes",
+          "category": "Debugging & Diagnostics",
+          "evidence": "stepped through the concurrency traces and found the missing queue lock"
+        }
+      ],
+      "skills": [
+        {
+          "name": "Root Cause Analysis",
+          "category": "Analytical",
+          "evidence": "Isolating the root cause made the entire afternoon worth it",
+          "evidenceType": "explicit",
+          "confidence": 0.94,
+          "strength": "strong"
+        },
+        {
+          "name": "Systems Diagnostics",
+          "category": "Technical",
+          "evidence": "stepped through concurrency traces and found missing queue lock",
+          "evidenceType": "explicit",
+          "confidence": 0.91,
+          "strength": "strong"
+        },
+        {
+          "name": "Debugging Persistence",
+          "category": "Execution",
+          "evidence": "Spent three hours debugging a race condition... frustrated at first",
+          "evidenceType": "inferred",
+          "confidence": 0.85,
+          "strength": "moderate"
+        }
+      ],
+      "energyObservations": [
+        {
+          "activity": "Finding root cause of complex technical flaw",
+          "direction": "energizing",
+          "evidence": "when I found the missing queue lock, it felt deeply satisfying",
+          "evidenceType": "explicit",
+          "confidence": 0.96
+        }
+      ],
+      "workStyleObservations": [
+        {
+          "pattern": "Deep focus on intricate causal puzzles",
+          "evidence": "Spent three hours debugging... stepped through concurrency traces",
+          "evidenceType": "inferred",
+          "confidence": 0.88
+        }
+      ],
+      "emotions": [
+        {
+          "label": "Satisfaction",
+          "evidence": "felt deeply satisfying",
+          "confidence": 0.95
+        },
+        {
+          "label": "Initial Frustration",
+          "evidence": "I was frustrated at first",
+          "confidence": 0.9
+        }
+      ],
+      "reflectionQuestion": "What specific tools or mental models helped you eliminate the other variables during concurrency tracing?",
+      "modelUsed": "gemini-3.8-flash",
+      "createdAt": "2026-10-06T17:22:46.275Z"
+    },
+    "demo-entry-2": {
+      "id": "analysis-2",
+      "userId": "demo-user-elena-vance",
+      "journalEntryId": "demo-entry-2",
+      "summary": "Navigated an unproductive debate by translating ambiguous requirements into a visual customer journey, bridging business and technical teams.",
+      "tasks": [
+        {
+          "description": "Attended stakeholder alignment meeting",
+          "category": "Coordination",
+          "evidence": "Attended a two-hour roadmap alignment meeting with cross-functional stakeholders"
+        },
+        {
+          "description": "Diagrammed user journey and technical trade-offs on whiteboard",
+          "category": "Product Design",
+          "evidence": "sketched a clear visual user flow linking customer pain points to technical trade-offs"
+        }
+      ],
+      "skills": [
+        {
+          "name": "User Journey Mapping",
+          "category": "Creative",
+          "evidence": "sketched a clear visual user flow linking customer pain points to technical trade-offs",
+          "evidenceType": "explicit",
+          "confidence": 0.92,
+          "strength": "strong"
+        },
+        {
+          "name": "Cross-Functional Translation",
+          "category": "Communication",
+          "evidence": "Once everyone could see the journey visually, the tension dissolved",
+          "evidenceType": "explicit",
+          "confidence": 0.89,
+          "strength": "strong"
+        },
+        {
+          "name": "Facilitation & Consensus",
+          "category": "Interpersonal",
+          "evidence": "the tension dissolved once everyone could see the journey",
+          "evidenceType": "inferred",
+          "confidence": 0.82,
+          "strength": "moderate"
+        }
+      ],
+      "energyObservations": [
+        {
+          "activity": "Unstructured circular debate over vague features",
+          "direction": "draining",
+          "evidence": "The circular debate over vague feature requests was exhausting and left me feeling drained",
+          "evidenceType": "explicit",
+          "confidence": 0.98
+        },
+        {
+          "activity": "Visual modeling to bring clarity to team ambiguity",
+          "direction": "energizing",
+          "evidence": "sketched a clear visual user flow... tension dissolved",
+          "evidenceType": "inferred",
+          "confidence": 0.85
+        }
+      ],
+      "workStyleObservations": [
+        {
+          "pattern": "Visual thinking to resolve cognitive ambiguity",
+          "evidence": "grabbed a whiteboard and sketched a clear visual user flow",
+          "evidenceType": "explicit",
+          "confidence": 0.91
+        }
+      ],
+      "emotions": [
+        {
+          "label": "Exhaustion",
+          "evidence": "left me feeling drained",
+          "confidence": 0.95
+        },
+        {
+          "label": "Relief & Clarity",
+          "evidence": "the tension dissolved",
+          "confidence": 0.88
+        }
+      ],
+      "reflectionQuestion": "How might you introduce visual artifacts earlier in stakeholder conversations to prevent circular debates?",
+      "modelUsed": "gemini-3.8-flash",
+      "createdAt": "2026-10-08T17:22:46.275Z"
+    },
+    "demo-entry-3": {
+      "id": "analysis-3",
+      "userId": "demo-user-elena-vance",
+      "journalEntryId": "demo-entry-3",
+      "summary": "Explored SQL telemetry drop-offs, identifying a UX stumbling block and authoring an actionable design synthesis.",
+      "tasks": [
+        {
+          "description": "Queried SQL logs for drop-off anomalies in checkout flow",
+          "category": "Data Analytics",
+          "evidence": "Analyzed SQL query logs and user drop-off metrics"
+        },
+        {
+          "description": "Authored one-page synthesis with solution recommendations",
+          "category": "Technical Writing",
+          "evidence": "wrote a one-page synthesis explaining the UX hurdle and suggested a cleaner fallback flow"
+        }
+      ],
+      "skills": [
+        {
+          "name": "Data-Informed UX Analysis",
+          "category": "Analytical",
+          "evidence": "noticed an anomaly where users stalled... suggested a cleaner fallback flow",
+          "evidenceType": "explicit",
+          "confidence": 0.93,
+          "strength": "strong"
+        },
+        {
+          "name": "SQL Exploration",
+          "category": "Technical",
+          "evidence": "Analyzed SQL query logs and user drop-off metrics",
+          "evidenceType": "explicit",
+          "confidence": 0.88,
+          "strength": "moderate"
+        },
+        {
+          "name": "Synthesis & Technical Writing",
+          "category": "Communication",
+          "evidence": "wrote a one-page synthesis explaining the UX hurdle",
+          "evidenceType": "explicit",
+          "confidence": 0.9,
+          "strength": "strong"
+        }
+      ],
+      "energyObservations": [
+        {
+          "activity": "Transforming raw telemetry into concrete product solutions",
+          "direction": "energizing",
+          "evidence": "Digging into the raw data and turning it into a tangible design solution energized me",
+          "evidenceType": "explicit",
+          "confidence": 0.97
+        }
+      ],
+      "workStyleObservations": [
+        {
+          "pattern": "Proactive ownership beyond formal bug filing",
+          "evidence": "Rather than just filing a bug ticket, I wrote a one-page synthesis",
+          "evidenceType": "explicit",
+          "confidence": 0.93
+        }
+      ],
+      "emotions": [
+        {
+          "label": "Curiosity & Energized",
+          "evidence": "energized me",
+          "confidence": 0.95
+        }
+      ],
+      "reflectionQuestion": "What other user journeys in your application might benefit from proactive SQL drop-off telemetry?",
+      "modelUsed": "gemini-3.8-flash",
+      "createdAt": "2026-10-10T17:22:46.275Z"
+    },
+    "demo-entry-4": {
+      "id": "analysis-4",
+      "userId": "demo-user-elena-vance",
+      "journalEntryId": "demo-entry-4",
+      "summary": "Mentored a junior engineer on asynchronous error boundaries using conceptual diagrams and sandbox practice.",
+      "tasks": [
+        {
+          "description": "Pair programmed and explained React error boundary architecture",
+          "category": "Mentorship",
+          "evidence": "paired for an hour with a junior frontend engineer... built an interactive sandbox example"
+        }
+      ],
+      "skills": [
+        {
+          "name": "Technical Mentorship",
+          "category": "Interpersonal",
+          "evidence": "built an interactive sandbox example together... love teaching and translating complex ideas",
+          "evidenceType": "explicit",
+          "confidence": 0.96,
+          "strength": "strong"
+        },
+        {
+          "name": "Pedagogical Translation",
+          "category": "Communication",
+          "evidence": "drew out how errors propagate up the component tree",
+          "evidenceType": "explicit",
+          "confidence": 0.91,
+          "strength": "strong"
+        },
+        {
+          "name": "Frontend Systems Architecture",
+          "category": "Technical",
+          "evidence": "asynchronous error boundaries in React",
+          "evidenceType": "explicit",
+          "confidence": 0.87,
+          "strength": "moderate"
+        }
+      ],
+      "energyObservations": [
+        {
+          "activity": "Mentoring peers and witnessing conceptual breakthroughs",
+          "direction": "energizing",
+          "evidence": "Seeing their eyes light up when the concept clicked reminded me how much I love teaching",
+          "evidenceType": "explicit",
+          "confidence": 0.98
+        }
+      ],
+      "workStyleObservations": [
+        {
+          "pattern": "Empowerment over quick fixes",
+          "evidence": "Instead of just fixing it for them, we drew out how errors propagate",
+          "evidenceType": "explicit",
+          "confidence": 0.94
+        }
+      ],
+      "emotions": [
+        {
+          "label": "Fulfillment & Joy",
+          "evidence": "reminded me how much I love teaching",
+          "confidence": 0.96
+        }
+      ],
+      "reflectionQuestion": "Could creating reusable internal engineering guides capture this teaching leverage at scale?",
+      "modelUsed": "gemini-3.8-flash",
+      "createdAt": "2026-10-12T17:22:46.275Z"
+    },
+    "demo-entry-5": {
+      "id": "analysis-5",
+      "userId": "demo-user-elena-vance",
+      "journalEntryId": "demo-entry-5",
+      "summary": "Constructed and shipped a complete vertical prototype with resilient edge case handling and instant feedback loops.",
+      "tasks": [
+        {
+          "description": "Built interactive milestone verification panel prototype",
+          "category": "Software Engineering",
+          "evidence": "built a complete working prototype of the milestone verification panel"
+        }
+      ],
+      "skills": [
+        {
+          "name": "Interactive Prototyping",
+          "category": "Technical",
+          "evidence": "built a complete working prototype... responsive touch states and real data bindings",
+          "evidenceType": "explicit",
+          "confidence": 0.95,
+          "strength": "strong"
+        },
+        {
+          "name": "Edge-Case Resilience",
+          "category": "Analytical",
+          "evidence": "tested edge cases like empty states and server timeouts",
+          "evidenceType": "explicit",
+          "confidence": 0.9,
+          "strength": "strong"
+        },
+        {
+          "name": "Rapid Vertical Execution",
+          "category": "Execution",
+          "evidence": "Shipping a real, usable vertical slice in a single focused day",
+          "evidenceType": "explicit",
+          "confidence": 0.92,
+          "strength": "strong"
+        }
+      ],
+      "energyObservations": [
+        {
+          "activity": "Delivering end-to-end usable software slice in focused flow",
+          "direction": "energizing",
+          "evidence": "Shipping a real, usable vertical slice in a single focused day felt fantastic",
+          "evidenceType": "explicit",
+          "confidence": 0.98
+        }
+      ],
+      "workStyleObservations": [
+        {
+          "pattern": "Autonomous end-to-end execution with high finish discipline",
+          "evidence": "tested edge cases like empty states and server timeouts... single focused day",
+          "evidenceType": "inferred",
+          "confidence": 0.9
+        }
+      ],
+      "emotions": [
+        {
+          "label": "Pride & Momentum",
+          "evidence": "felt fantastic",
+          "confidence": 0.94
+        }
+      ],
+      "reflectionQuestion": "What was the key constraint that allowed you to complete the entire slice within a single day?",
+      "modelUsed": "gemini-3.8-flash",
+      "createdAt": "2026-10-14T17:22:46.275Z"
+    },
+    "entry-1792081852843-vqi8": {
+      "id": "analysis-1792082176842-mg4qj",
+      "userId": "demo-user-elena-vance",
+      "journalEntryId": "entry-1792081852843-vqi8",
+      "summary": "The user configured PostgreSQL schemas, migrated table constraints, and successfully verified data integrity under concurrent transactions.",
+      "tasks": [
+        {
+          "description": "Configure PostgreSQL schemas and migrate table constraints",
+          "category": "Database Engineering",
+          "evidence": "configured PostgreSQL schemas and migrated all table constraints",
+          "estimatedEffort": "moderate"
+        },
+        {
+          "description": "Verify data integrity under concurrent transactions and run query tests",
+          "category": "Quality Assurance / Testing",
+          "evidence": "verifying data integrity under concurrent transactions. I felt deeply satisfied when the query tests passed with zero data anomalies.",
+          "estimatedEffort": "moderate"
+        }
+      ],
+      "skills": [
+        {
+          "name": "Database Schema Migration & Constraint Management",
+          "category": "Database Engineering",
+          "evidence": "configured PostgreSQL schemas and migrated all table constraints",
+          "evidenceType": "explicit",
+          "confidence": 0.95,
+          "strength": "moderate"
+        },
+        {
+          "name": "Concurrency Testing & Data Integrity Verification",
+          "category": "Quality Assurance & Testing",
+          "evidence": "verifying data integrity under concurrent transactions",
+          "evidenceType": "explicit",
+          "confidence": 0.92,
+          "strength": "strong"
+        },
+        {
+          "name": "PostgreSQL Administration",
+          "category": "Technical Infrastructure",
+          "evidence": "Today I configured PostgreSQL schemas and migrated all table constraints",
+          "evidenceType": "explicit",
+          "confidence": 0.94,
+          "strength": "moderate"
+        }
+      ],
+      "energyObservations": [
+        {
+          "activity": "Passing query tests with zero anomalies after migration",
+          "direction": "energizing",
+          "evidence": "I felt deeply satisfied when the query tests passed with zero data anomalies.",
+          "evidenceType": "explicit",
+          "confidence": 0.95
+        }
+      ],
+      "workStyleObservations": [
+        {
+          "pattern": "Rigorous validation under edge conditions",
+          "evidence": "verifying data integrity under concurrent transactions",
+          "evidenceType": "inferred",
+          "confidence": 0.88
+        }
+      ],
+      "emotions": [
+        {
+          "label": "satisfaction",
+          "evidence": "I felt deeply satisfied when the query tests passed with zero data anomalies.",
+          "confidence": 0.98
+        }
+      ],
+      "reflectionQuestion": "What specific testing strategies or constraints made this concurrent transaction verification particularly smooth and dependable?",
+      "modelUsed": "gemini-3.8-flash",
+      "promptVersion": "v1.2.0",
+      "createdAt": "2026-10-15T16:36:16.842Z"
+    },
+    "entry-1792082608593-pft3": {
+      "id": "analysis-1792082746433-2x3e7",
+      "userId": "demo-user-elena-vance",
+      "journalEntryId": "entry-1792082608593-pft3",
+      "summary": "The user conducted two usability testing sessions on a prototype payment checkout flow, identified two unexpected friction points, and translated the findings into action items for the upcoming sprint.",
+      "tasks": [
+        {
+          "description": "Run two usability testing sessions with team members on a prototype",
+          "category": "UX Research",
+          "evidence": "Today I ran two usability sessions with team members to test the prototype."
+        },
+        {
+          "description": "Document and analyze friction points in the payment checkout flow",
+          "category": "Product Design",
+          "evidence": "I took detailed notes on where they got stuck in the payment checkout flow and discovered two unexpected friction points."
+        },
+        {
+          "description": "Synthesize usability findings into sprint action items",
+          "category": "Execution",
+          "evidence": "I synthesized these into action items for our next sprint."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Usability Testing",
+          "category": "Research",
+          "evidence": "Today I ran two usability sessions with team members to test the prototype.",
+          "evidenceType": "explicit",
+          "confidence": 0.95,
+          "strength": "moderate"
+        },
+        {
+          "name": "UX Friction Analysis",
+          "category": "Analytical",
+          "evidence": "took detailed notes on where they got stuck in the payment checkout flow and discovered two unexpected friction points",
+          "evidenceType": "explicit",
+          "confidence": 0.92,
+          "strength": "moderate"
+        },
+        {
+          "name": "Sprint Planning & Synthesis",
+          "category": "Execution",
+          "evidence": "I synthesized these into action items for our next sprint.",
+          "evidenceType": "explicit",
+          "confidence": 0.88,
+          "strength": "moderate"
+        }
+      ],
+      "energyObservations": [
+        {
+          "activity": "Discovering subtle UX hurdles and friction points",
+          "direction": "energizing",
+          "evidence": "Finding those subtle UX hurdles felt surprisingly energizing.",
+          "evidenceType": "explicit",
+          "confidence": 0.98
+        }
+      ],
+      "workStyleObservations": [
+        {
+          "pattern": "Detailed observational synthesis",
+          "evidence": "I took detailed notes on where they got stuck in the payment checkout flow and discovered two unexpected friction points. I synthesized these into action items for our next sprint.",
+          "evidenceType": "inferred",
+          "confidence": 0.89
+        }
+      ],
+      "emotions": [
+        {
+          "label": "Energized",
+          "evidence": "Finding those subtle UX hurdles felt surprisingly energizing.",
+          "confidence": 0.97
+        }
+      ],
+      "reflectionQuestion": "What was it about uncovering those specific friction points that made the process feel unexpectedly energizing to you?",
+      "modelUsed": "gemini-3.8-flash",
+      "promptVersion": "v1.3.0",
+      "createdAt": "2026-10-15T16:45:46.433Z"
+    }
+  },
+  "skillFeedback": {},
+  "careers": {
+    "demo-user-elena-vance": [
+      {
+        "id": "career-1",
+        "userId": "demo-user-elena-vance",
+        "title": "Product Engineer (Technical Product Builder)",
+        "description": "A full-lifecycle builder who bridges user pain points, data telemetry, and high-craft UI implementation to deliver tangible software features.",
+        "whyItMayFit": "Observed evidence demonstrates strong alignment: you enjoy diving into user telemetry (Oct 9) and sketching customer journeys (Oct 7), combined with high satisfaction from shipping complete vertical prototypes (Oct 13).",
+        "relevantStrengths": [
+          "Data-Informed UX Analysis",
+          "Interactive Prototyping",
+          "Root Cause Analysis",
+          "Cross-Functional Translation"
+        ],
+        "supportingEvidence": [
+          {
+            "entryId": "demo-entry-3",
+            "excerpt": "Digging into the raw data and turning it into a tangible design solution energized me",
+            "skillName": "Data-Informed UX Analysis"
+          },
+          {
+            "entryId": "demo-entry-5",
+            "excerpt": "Shipping a real, usable vertical slice in a single focused day felt fantastic",
+            "skillName": "Interactive Prototyping"
+          },
+          {
+            "entryId": "demo-entry-2",
+            "excerpt": "sketched a clear visual user flow linking customer pain points to technical trade-offs",
+            "skillName": "User Journey Mapping"
+          }
+        ],
+        "potentialEnvironments": [
+          "Fast-paced product teams with high autonomy",
+          "Early-stage to growth venture studios",
+          "User-centric SaaS organizations"
+        ],
+        "typicalTasks": [
+          "Rapid prototyping and user validation",
+          "Instrumenting product telemetry and analyzing funnel anomalies",
+          "Architecting robust frontend interactions and state machines"
+        ],
+        "skillsToDevelop": [
+          "Quantitative A/B testing methodologies",
+          "Systematic user interview techniques"
+        ],
+        "challenges": [
+          "May encounter frustration in bureaucratic environments with high meeting loads"
+        ],
+        "unknowns": [
+          "How comfortably you manage multi-month roadmaps compared to 1-week execution sprints"
+        ],
+        "smallExperiment": "Spend 4 hours next week conducting a mini product audit: pick one friction point in a product you use daily, diagram the flow, write a 1-page spec, and build a rough prototype.",
+        "suggestedNextSteps": [
+          "Review the Product Engineering Roadmap",
+          "Formulate your personal criteria for a high-autonomy team"
+        ],
+        "evidenceStrength": "supported_by_repeated_observations",
+        "status": "active",
+        "createdAt": "2026-10-15T17:22:46.275Z"
+      },
+      {
+        "id": "career-2",
+        "userId": "demo-user-elena-vance",
+        "title": "Developer Experience (DevRel / Technical Educator)",
+        "description": "An empathetic technical communicator who creates sandboxes, guides, and tools to help engineers understand and adopt complex architectures.",
+        "whyItMayFit": "Your explicit enthusiasm for mentoring (Oct 11) and turning confusing concepts into visual models (Oct 7) shows natural aptitude for developer education.",
+        "relevantStrengths": [
+          "Technical Mentorship",
+          "Pedagogical Translation",
+          "Technical Writing",
+          "Systems Diagnostics"
+        ],
+        "supportingEvidence": [
+          {
+            "entryId": "demo-entry-4",
+            "excerpt": "Seeing their eyes light up when the concept clicked reminded me how much I love teaching",
+            "skillName": "Technical Mentorship"
+          },
+          {
+            "entryId": "demo-entry-2",
+            "excerpt": "Once everyone could see the journey visually, the tension dissolved",
+            "skillName": "Cross-Functional Translation"
+          }
+        ],
+        "potentialEnvironments": [
+          "Developer tool companies (databases, cloud platforms, UI frameworks)",
+          "Open-source foundation leadership",
+          "Technical training organizations"
+        ],
+        "typicalTasks": [
+          "Authoring interactive documentation and architectural guides",
+          "Building demonstration repositories and starter templates",
+          "Hosting technical workshops and office hours"
+        ],
+        "skillsToDevelop": [
+          "Public speaking at developer conferences",
+          "Community engagement and forum facilitation"
+        ],
+        "challenges": [
+          "Requires frequent context switching across multiple developer queries"
+        ],
+        "unknowns": [
+          "Preference between 1-on-1 mentorship vs. producing video/written content at scale"
+        ],
+        "smallExperiment": "Write a public 600-word explanation of React error boundaries with a CodeSandbox demo link and gather feedback from 3 peers.",
+        "suggestedNextSteps": [
+          "Explore DevRel roadmaps and documentation architectures"
+        ],
+        "evidenceStrength": "promising_match",
+        "status": "saved",
+        "createdAt": "2026-10-15T17:22:46.275Z"
+      },
+      {
+        "id": "career-3",
+        "userId": "demo-user-elena-vance",
+        "title": "UX Systems Researcher & Analyst",
+        "description": "A forensic observer who uncovers cognitive friction in digital systems through mixed-methods telemetry and visual workflow mapping.",
+        "whyItMayFit": "Strong demonstration of synthesizing quantitative anomalies into actionable clarity (Oct 9) and resolving ambiguity through visual models (Oct 7).",
+        "relevantStrengths": [
+          "Data-Informed UX Analysis",
+          "Root Cause Analysis",
+          "User Journey Mapping",
+          "SQL Exploration"
+        ],
+        "supportingEvidence": [
+          {
+            "entryId": "demo-entry-3",
+            "excerpt": "wrote a one-page synthesis explaining the UX hurdle and suggested a cleaner fallback flow",
+            "skillName": "Data-Informed UX Analysis"
+          }
+        ],
+        "potentialEnvironments": [
+          "Enterprise productivity software",
+          "Fintech or healthcare applications requiring zero error tolerance",
+          "Design research agencies"
+        ],
+        "typicalTasks": [
+          "Analyzing user funnel telemetry and drop-offs",
+          "Running usability benchmarks and cognitive walkthroughs",
+          "Formulating evidence-based design recommendations"
+        ],
+        "skillsToDevelop": [
+          "Formal statistical analysis for usability metrics",
+          "Qualitative interview facilitation protocols"
+        ],
+        "challenges": [
+          "May miss the thrill of directly writing and shipping production code"
+        ],
+        "unknowns": [
+          "Whether you prefer diagnosing problems or directly implementing their solutions"
+        ],
+        "smallExperiment": "Shadow a user through a 15-minute onboarding flow, record cognitive hurdles, and create a 2-page friction report.",
+        "suggestedNextSteps": [
+          "Read Nielsen Norman group research on cognitive walkthroughs"
+        ],
+        "evidenceStrength": "early_hypothesis",
+        "status": "saved",
+        "createdAt": "2026-10-15T17:22:46.275Z"
+      }
+    ]
+  },
+  "roadmaps": {
+    "demo-user-elena-vance": {
+      "id": "demo-roadmap-1",
+      "userId": "demo-user-elena-vance",
+      "careerRecommendationId": "career-1",
+      "careerTitle": "Product Engineer (Technical Product Builder)",
+      "weeklyTimeBudget": 6,
+      "overallStatus": "active",
+      "createdAt": "2026-10-08T17:22:46.275Z",
+      "updatedAt": "2026-10-15T17:22:46.275Z",
+      "phases": [
+        {
+          "id": "phase-1",
+          "name": "Phase 1: Foundations of Product Thinking",
+          "description": "Deepen ability to quantify user problems with data and structure fast hypotheses before writing code.",
+          "milestones": [
+            {
+              "id": "m-1-1",
+              "roadmapId": "demo-roadmap-1",
+              "phaseId": "phase-1",
+              "title": "Define Problem Statements from Raw Telemetry",
+              "description": "Analyze real application drop-off logs and extract 3 actionable user friction hypotheses with supporting metrics.",
+              "completionCriteria": "A written 1-page synthesis linking data drop-off points to concrete user UX hypotheses.",
+              "skillsTargeted": [
+                "Data-Informed UX Analysis",
+                "SQL Exploration",
+                "Technical Writing"
+              ],
+              "suggestedActivities": [
+                "Extract funnel metrics from a sample database",
+                "Draft an executive summary isolating the primary UX hurdle"
+              ],
+              "estimatedDuration": "1 week (4-6 hours)",
+              "status": "completed",
+              "completedAt": "2026-10-10T17:22:46.275Z"
+            },
+            {
+              "id": "m-1-2",
+              "roadmapId": "demo-roadmap-1",
+              "phaseId": "phase-1",
+              "title": "Master User Journey & Visual Flow Mapping",
+              "description": "Map a multi-step user interaction highlighting both system state changes and cognitive stress points.",
+              "completionCriteria": "A complete visual journey diagram demonstrating error boundaries and alternative user paths.",
+              "skillsTargeted": [
+                "User Journey Mapping",
+                "Cross-Functional Translation"
+              ],
+              "suggestedActivities": [
+                "Sketch whiteboard flow diagram",
+                "Review with a teammate for cognitive clarity"
+              ],
+              "estimatedDuration": "1 week (5 hours)",
+              "status": "completed",
+              "completedAt": "2026-10-12T17:22:46.275Z"
+            }
+          ]
+        },
+        {
+          "id": "phase-2",
+          "name": "Phase 2: Guided Prototyping & Feedback Loops",
+          "description": "Build rapid, resilient frontend slices that test product assumptions with live users.",
+          "milestones": [
+            {
+              "id": "m-2-1",
+              "roadmapId": "demo-roadmap-1",
+              "phaseId": "phase-2",
+              "title": "Build an Interactive Vertical Verification Slice",
+              "description": "Implement an interactive UI component with real data persistence, optimistic updates, and resilient edge cases.",
+              "completionCriteria": "A working prototype with error boundaries, empty states, and under-200ms interaction feedback.",
+              "skillsTargeted": [
+                "Interactive Prototyping",
+                "Edge-Case Resilience",
+                "Rapid Vertical Execution"
+              ],
+              "suggestedActivities": [
+                "Create responsive component with state transitions",
+                "Test network lag and error recovery"
+              ],
+              "estimatedDuration": "2 weeks (10 hours)",
+              "status": "needs_review"
+            },
+            {
+              "id": "m-2-2",
+              "roadmapId": "demo-roadmap-1",
+              "phaseId": "phase-2",
+              "title": "Conduct Usability Validation on Prototype",
+              "description": "Run 2 real usability sessions observing participants interacting with your prototype without guiding them.",
+              "completionCriteria": "Notes from 2 sessions highlighting unexpected friction points and validated assumptions.",
+              "skillsTargeted": [
+                "User Feedback Synthesis",
+                "Observational Analysis"
+              ],
+              "suggestedActivities": [
+                "Record 15-minute user session",
+                "Document top 3 behavioral surprises"
+              ],
+              "estimatedDuration": "2 weeks (6 hours)",
+              "status": "not_started"
+            }
+          ]
+        },
+        {
+          "id": "phase-3",
+          "name": "Phase 3: Applied Projects & Full-Stack Craft",
+          "description": "Deliver an end-to-end product feature with instrumentation and demonstrable business impact.",
+          "milestones": [
+            {
+              "id": "m-3-1",
+              "roadmapId": "demo-roadmap-1",
+              "phaseId": "phase-3",
+              "title": "Full-Stack Feature with Analytics Instrumentation",
+              "description": "Design, build, and deploy a customer-facing feature equipped with event telemetry to measure adoption.",
+              "completionCriteria": "Deployed feature with live event tracking and a monitoring dashboard.",
+              "skillsTargeted": [
+                "Full-Stack Engineering",
+                "Product Analytics",
+                "Systems Architecture"
+              ],
+              "suggestedActivities": [
+                "Set up server endpoints and database tables",
+                "Track key funnel milestones in code"
+              ],
+              "estimatedDuration": "3 weeks (15 hours)",
+              "status": "not_started"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "progressEvents": {
+    "demo-user-elena-vance": [
+      {
+        "id": "event-1",
+        "userId": "demo-user-elena-vance",
+        "roadmapId": "demo-roadmap-1",
+        "milestoneId": "m-2-1",
+        "milestoneTitle": "Build an Interactive Vertical Verification Slice",
+        "journalEntryId": "demo-entry-5",
+        "journalEntryDate": "2026-10-14",
+        "evidenceExcerpt": "Today I built a complete working prototype of the milestone verification panel with responsive touch states and real data bindings... tested edge cases like empty states and server timeouts.",
+        "classification": "strong_progress",
+        "confidence": 0.94,
+        "proposedAction": "complete_milestone",
+        "userConfirmationStatus": "pending",
+        "createdAt": "2026-10-14T17:22:46.275Z"
+      },
+      {
+        "id": "event-2",
+        "userId": "demo-user-elena-vance",
+        "roadmapId": "demo-roadmap-1",
+        "milestoneId": "m-1-1",
+        "milestoneTitle": "Define Problem Statements from Raw Telemetry",
+        "journalEntryId": "demo-entry-3",
+        "journalEntryDate": "2026-10-10",
+        "evidenceExcerpt": "wrote a one-page synthesis explaining the UX hurdle and suggested a cleaner fallback flow. Digging into the raw data and turning it into a tangible design solution energized me.",
+        "classification": "milestone_complete",
+        "confidence": 0.96,
+        "proposedAction": "complete_milestone",
+        "userConfirmationStatus": "confirmed",
+        "createdAt": "2026-10-10T17:22:46.275Z"
+      }
+    ]
+  },
+  "weeklyReports": {
+    "demo-user-elena-vance": [
+      {
+        "id": "report-demo-1",
+        "userId": "demo-user-elena-vance",
+        "weekStart": "2026-10-08",
+        "weekEnd": "2026-10-15",
+        "summary": "This week revealed a clear pattern: you thrive when combining analytical problem-solving with tangible visual outcomes. Mentoring a teammate and building an interactive vertical prototype were your highest energy peaks.",
+        "skillsDemonstrated": [
+          "Root Cause Analysis",
+          "User Journey Mapping",
+          "Technical Mentorship",
+          "Interactive Prototyping",
+          "Data-Informed UX Analysis"
+        ],
+        "positiveMoments": [
+          "Resolving the elusive race condition after deep tracing",
+          "The moment of breakthrough when mentoring on error boundaries",
+          "Shipping a polished, working prototype in a single focused day"
+        ],
+        "challenges": [
+          "Unstructured cross-functional meetings without visual artifacts felt draining"
+        ],
+        "recurringPatterns": [
+          "Visual models consistently transform ambiguity and tension into consensus",
+          "Deep focus on causal puzzles energizes, while circular debates deplete momentum"
+        ],
+        "roadmapProgress": "Completed 2 foundational milestones in the Product Engineer track. Milestone 2.1 (Interactive Vertical Slice) has strong observed evidence awaiting confirmation.",
+        "weeklyQuestion": "How could you structure next week to guard at least two 3-hour deep focus blocks for prototype exploration?",
+        "createdAt": "2026-10-15T17:22:46.275Z"
+      }
+    ]
+  },
+  "sessions": {
+    "cdt_1792083922757_rwph7k5msl8uybl1": {
+      "token": "cdt_1792083922757_rwph7k5msl8uybl1",
+      "userId": "user-1792083922746-fc7c",
+      "createdAt": "2026-10-15T17:05:22.757Z",
+      "expiresAt": "2026-11-14T17:05:22.757Z"
+    },
+    "cdt_1792083922766_vjem1gkyubm91obw": {
+      "token": "cdt_1792083922766_vjem1gkyubm91obw",
+      "userId": "user-1792083922746-fc7c",
+      "createdAt": "2026-10-15T17:05:22.766Z",
+      "expiresAt": "2026-11-14T17:05:22.766Z"
+    },
+    "cdt_1792083922783_wtai7fpho42rb75s": {
+      "token": "cdt_1792083922783_wtai7fpho42rb75s",
+      "userId": "user-1792083922782-coqe",
+      "createdAt": "2026-10-15T17:05:22.783Z",
+      "expiresAt": "2026-11-14T17:05:22.783Z"
+    },
+    "cdt_1792083970713_bza9vr09elv3jbjh": {
+      "token": "cdt_1792083970713_bza9vr09elv3jbjh",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-15T17:06:10.713Z",
+      "expiresAt": "2026-11-14T17:06:10.713Z"
+    },
+    "cdt_1792083970761_znurtesz3jt7ctiq": {
+      "token": "cdt_1792083970761_znurtesz3jt7ctiq",
+      "userId": "user-1792083970759-9j5s",
+      "createdAt": "2026-10-15T17:06:10.761Z",
+      "expiresAt": "2026-11-14T17:06:10.761Z"
+    },
+    "cdt_1792083978574_p8ka20h8af8zy1z3": {
+      "token": "cdt_1792083978574_p8ka20h8af8zy1z3",
+      "userId": "user-1792083978572-tdqb",
+      "createdAt": "2026-10-15T17:06:18.574Z",
+      "expiresAt": "2026-11-14T17:06:18.574Z"
+    },
+    "cdt_1792083978580_y5pc3o38dvtysfhk": {
+      "token": "cdt_1792083978580_y5pc3o38dvtysfhk",
+      "userId": "user-1792083978572-tdqb",
+      "createdAt": "2026-10-15T17:06:18.580Z",
+      "expiresAt": "2026-11-14T17:06:18.580Z"
+    },
+    "cdt_1792083978596_euy4z7cmtn2h2wq3": {
+      "token": "cdt_1792083978596_euy4z7cmtn2h2wq3",
+      "userId": "user-1792083978594-6pyu",
+      "createdAt": "2026-10-15T17:06:18.596Z",
+      "expiresAt": "2026-11-14T17:06:18.596Z"
+    },
+    "cdt_1792084060170_u4ltkp2snij2kuob": {
+      "token": "cdt_1792084060170_u4ltkp2snij2kuob",
+      "userId": "user-1792084060157-473n",
+      "createdAt": "2026-10-15T17:07:40.170Z",
+      "expiresAt": "2026-11-14T17:07:40.170Z"
+    },
+    "cdt_1792084060183_dhnvmq70vi9zdhzp": {
+      "token": "cdt_1792084060183_dhnvmq70vi9zdhzp",
+      "userId": "user-1792084060181-egep",
+      "createdAt": "2026-10-15T17:07:40.183Z",
+      "expiresAt": "2026-11-14T17:07:40.183Z"
+    },
+    "cdt_1792084064148_b8xkjaj1kbt6vooh": {
+      "token": "cdt_1792084064148_b8xkjaj1kbt6vooh",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-15T17:07:44.148Z",
+      "expiresAt": "2026-11-14T17:07:44.148Z"
+    },
+    "cdt_1792084111802_05v0q8a6oak91fm5": {
+      "token": "cdt_1792084111802_05v0q8a6oak91fm5",
+      "userId": "user-1792084111800-ywwr",
+      "createdAt": "2026-10-15T17:08:31.802Z",
+      "expiresAt": "2026-11-14T17:08:31.802Z"
+    },
+    "cdt_1792084111811_29sei2010a3jb3ye": {
+      "token": "cdt_1792084111811_29sei2010a3jb3ye",
+      "userId": "user-1792084111800-ywwr",
+      "createdAt": "2026-10-15T17:08:31.812Z",
+      "expiresAt": "2026-11-14T17:08:31.812Z"
+    },
+    "cdt_1792084111834_hwfnqq7w5firkrv4": {
+      "token": "cdt_1792084111834_hwfnqq7w5firkrv4",
+      "userId": "user-1792084111829-q6mw",
+      "createdAt": "2026-10-15T17:08:31.834Z",
+      "expiresAt": "2026-11-14T17:08:31.834Z"
+    },
+    "cdt_1792084120266_7gg8okioxbgv5830": {
+      "token": "cdt_1792084120266_7gg8okioxbgv5830",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-15T17:08:40.266Z",
+      "expiresAt": "2026-11-14T17:08:40.266Z"
+    },
+    "cdt_1792084120295_awq07lwqpvssd1fv": {
+      "token": "cdt_1792084120295_awq07lwqpvssd1fv",
+      "userId": "user-1792084120293-f3ow",
+      "createdAt": "2026-10-15T17:08:40.295Z",
+      "expiresAt": "2026-11-14T17:08:40.295Z"
+    },
+    "cdt_1792084203395_j0rrzqkruqv8fhwx": {
+      "token": "cdt_1792084203395_j0rrzqkruqv8fhwx",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-15T17:10:03.395Z",
+      "expiresAt": "2026-11-14T17:10:03.395Z"
+    },
+    "cdt_1792084699975_pilo2i1crqr1e7dq": {
+      "token": "cdt_1792084699975_pilo2i1crqr1e7dq",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-15T17:18:19.975Z",
+      "expiresAt": "2026-11-14T17:18:19.975Z"
+    },
+    "cdt_1792084772140_ed3g88lm96cyu45o": {
+      "token": "cdt_1792084772140_ed3g88lm96cyu45o",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-15T17:19:32.140Z",
+      "expiresAt": "2026-11-14T17:19:32.140Z"
+    },
+    "cdt_1792084966276_xq8s99yda5al8sub": {
+      "token": "cdt_1792084966276_xq8s99yda5al8sub",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-15T17:22:46.276Z",
+      "expiresAt": "2026-11-14T17:22:46.276Z"
+    }
+  }
+}

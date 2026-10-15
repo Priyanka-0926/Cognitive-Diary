@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive · Cognitive Diary (Java Edition)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+        .font-editorial { font-family: 'Fraunces', Georgia, serif; }
+        .font-mono-tabular { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body class="bg-[#F8F7F4] text-[#222421] min-h-screen antialiased flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="bg-white border-b border-[#E6E3DE] sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <a href="/overview" class="flex items-center gap-2 group">
+                    <span class="w-8 h-8 rounded bg-[#3E5A46] text-white flex items-center justify-center font-bold text-sm shadow-xs group-hover:bg-[#2A4031] transition-colors">CD</span>
+                    <div>
+                        <span class="font-editorial text-lg font-semibold tracking-tight text-[#222421] block leading-none">Cognitive Diary</span>
+                        <span class="text-[10px] text-[#878D82] font-mono-tabular">Java 17 Full-Stack</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center gap-1 text-xs font-medium">
+                    <a href="/overview" class="px-3 py-1.5 rounded text-[#5C6059] hover:text-[#222421] hover:bg-[#FAF8F5]">Overview</a>
+                    <a href="/journal" class="px-3 py-1.5 rounded text-[#5C6059] hover:text-[#222421] hover:bg-[#FAF8F5]">Write</a>
+                    <a href="/archive" class="px-3 py-1.5 rounded bg-[#EEF4EE] text-[#2A4031] font-semibold">Archive</a>
+                    <a href="/strengths" class="px-3 py-1.5 rounded text-[#5C6059] hover:text-[#222421] hover:bg-[#FAF8F5]">Strengths</a>
+                    <a href="/careers" class="px-3 py-1.5 rounded text-[#5C6059] hover:text-[#222421] hover:bg-[#FAF8F5]">Careers</a>
+                    <a href="/roadmap" class="px-3 py-1.5 rounded text-[#5C6059] hover:text-[#222421] hover:bg-[#FAF8F5]">Roadmap</a>
+                    <a href="/settings" class="px-3 py-1.5 rounded text-[#5C6059] hover:text-[#222421] hover:bg-[#FAF8F5]">Settings</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="/journal" class="px-3.5 py-1.5 text-xs font-medium text-white bg-[#3E5A46] hover:bg-[#2A4031] rounded transition-colors shadow-xs">+ New Reflection</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-[#E6E3DE]">
+            <div>
+                <h1 class="font-editorial text-2xl font-semibold text-[#222421]">Reflection Archive</h1>
+                <p class="text-xs text-[#5C6059] mt-0.5">Search and examine historical entries, extracted evidence, and AI cognitive feedback.</p>
+            </div>
+            <!-- Search Form -->
+            <form action="/archive" method="get" class="flex items-center gap-2 w-full sm:w-auto">
+                <input type="text" name="search" th:value="${searchQuery}" placeholder="Search reflections or skills..."
+                    class="px-3 py-1.5 bg-white border border-[#D5D2CC] rounded text-xs w-full sm:w-64 focus:ring-1 focus:ring-[#3E5A46] outline-none">
+                <button type="submit" class="px-3 py-1.5 bg-[#3E5A46] text-white rounded text-xs font-medium hover:bg-[#2A4031]">Filter</button>
+            </form>
+        </div>
+
+        <!-- Entries List -->
+        <div class="space-y-4">
+            <div th:each="entry : ${entries}" class="bg-white border border-[#E6E3DE] rounded-lg overflow-hidden shadow-xs">
+                <div class="p-4 bg-[#FAF8F5]/60 border-b border-[#E6E3DE] flex items-center justify-between text-xs">
+                    <div class="flex items-center gap-3">
+                        <span class="font-mono-tabular font-semibold text-[#222421]" th:text="${entry.entryDate}">2026-10-14</span>
+                        <span class="text-[#878D82]">·</span>
+                        <span class="text-[#5C6059]" th:text="${entry.wordCount + ' words'}">142 words</span>
+                    </div>
+                    <div>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-medium"
+                              th:classappend="${entry.analysisStatus == 'completed'} ? 'bg-[#EEF4EE] text-[#3E5A46]' : 'bg-[#FEF3C7] text-[#B45309]'"
+                              th:text="${entry.analysisStatus}">completed</span>
+                    </div>
+                </div>
+
+                <div class="p-5 space-y-3">
+                    <p class="text-sm text-[#222421] whitespace-pre-wrap leading-relaxed" th:text="${entry.originalText}"></p>
+
+                    <div th:if="${entry.analysis != null}" class="p-4 bg-[#FAF8F5] rounded border border-[#E6E3DE] space-y-2 mt-3">
+                        <span class="text-[11px] font-semibold text-[#878D82] uppercase tracking-wide block">Synthesized Competencies</span>
+                        <p class="text-xs text-[#444840]" th:text="${entry.analysis.summary}"></p>
+
+                        <div th:if="${entry.analysis.skills != null and !entry.analysis.skills.isEmpty()}" class="flex flex-wrap gap-2 pt-1">
+                            <span th:each="s : ${entry.analysis.skills}" class="px-2 py-1 bg-white border border-[#DCE7DC] rounded text-[11px] text-[#2A4031] font-medium">
+                                <span th:text="${s.name}">Skill</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-white border-t border-[#E6E3DE] py-6 text-center text-xs text-[#878D82]">
+        <p>Cognitive Diary · 100% Native Java Spring Boot Engine</p>
+    </footer>
+
+</body>
+</html>

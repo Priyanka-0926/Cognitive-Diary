@@ -1,0 +1,6 @@
+{
+  "name": "Cognitive Diary",
+  "description": "AI-powered career discovery and personal growth platform that uncovers natural working strengths, energy patterns, and career roadmaps from everyday journaling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
