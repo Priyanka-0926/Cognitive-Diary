@@ -10,6 +10,7 @@ import { StrengthsPage } from './pages/StrengthsPage.tsx';
 import { CareerDiscoveryPage } from './pages/CareerDiscoveryPage.tsx';
 import { CareerRoadmapPage } from './pages/CareerRoadmapPage.tsx';
 import { InsightsPage } from './pages/InsightsPage.tsx';
+import { ArchitecturePage } from './pages/ArchitecturePage.tsx';
 import { SettingsPage } from './pages/SettingsPage.tsx';
 
 function MainRouter() {
@@ -42,6 +43,8 @@ function MainRouter() {
         return <CareerRoadmapPage />;
       case 'insights':
         return <InsightsPage />;
+      case 'architecture':
+        return <ArchitecturePage />;
       case 'settings':
         return <SettingsPage />;
       default:

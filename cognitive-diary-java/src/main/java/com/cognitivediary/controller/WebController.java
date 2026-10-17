@@ -128,6 +128,13 @@ public class WebController {
         return SettingsView.render(effective);
     }
 
+    @GetMapping(value = "/architecture", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public String architecture(@AuthenticationPrincipal User user) {
+        User effective = getEffectiveUser(user);
+        return ArchitectureView.render(effective);
+    }
+
     @GetMapping(value = "/login", produces = MediaType.TEXT_HTML_VALUE)
     @ResponseBody
     public String login() {

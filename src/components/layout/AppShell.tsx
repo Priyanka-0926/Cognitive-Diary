@@ -17,6 +17,7 @@ import {
   AlertCircle,
   HelpCircle,
   ChevronRight,
+  Cpu,
 } from 'lucide-react';
 
 interface AppShellProps {
@@ -51,6 +52,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
     { id: 'careers', label: 'Career Discovery', icon: Compass },
     { id: 'roadmap', label: 'Career Roadmap', icon: MapPin },
     { id: 'insights', label: 'Insights & Reflection', icon: TrendingUp },
+    { id: 'architecture', label: 'Architecture & Concepts', icon: Cpu },
     { id: 'settings', label: 'Settings', icon: Settings },
   ];
 

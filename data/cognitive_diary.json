@@ -4,7 +4,7 @@
       "id": "demo-user-elena-vance",
       "displayName": "Elena Vance",
       "email": "elena.vance@example.com",
-      "createdAt": "2026-10-01T17:22:46.275Z",
+      "createdAt": "2026-10-03T10:48:58.952Z",
       "timezone": "America/New_York",
       "onboardingCompleted": true,
       "isDemo": true,
@@ -194,67 +194,80 @@
         "shareDataForAnalysis": true,
         "weeklyHoursBudget": 5
       }
+    },
+    "user-1792234138919-xahr": {
+      "id": "user-1792234138919-xahr",
+      "displayName": "Test User Beta",
+      "email": "beta_1792234138913@example.com",
+      "createdAt": "2026-10-17T10:48:58.919Z",
+      "timezone": "UTC",
+      "onboardingCompleted": false,
+      "preferences": {
+        "remindersEnabled": true,
+        "shareDataForAnalysis": true,
+        "weeklyHoursBudget": 5
+      }
     }
   },
   "entries": {
     "demo-entry-1": {
       "id": "demo-entry-1",
       "userId": "demo-user-elena-vance",
-      "entryDate": "2026-10-06",
+      "entryDate": "2026-10-08",
       "originalText": "Spent three hours debugging a race condition in our client state synchronizer. I was frustrated at first because the error only reproduced on intermittent network spikes, but when I stepped through the concurrency traces and found the missing queue lock, it felt deeply satisfying. Isolating the root cause made the entire afternoon worth it.",
       "wordCount": 57,
-      "createdAt": "2026-10-06T17:22:46.275Z",
-      "updatedAt": "2026-10-06T17:22:46.275Z",
+      "createdAt": "2026-10-08T10:48:58.952Z",
+      "updatedAt": "2026-10-08T10:48:58.952Z",
       "analysisStatus": "completed",
-      "analyzedAt": "2026-10-06T17:22:46.275Z",
+      "analyzedAt": "2026-10-08T10:48:58.952Z",
       "isDemo": true
     },
     "demo-entry-2": {
       "id": "demo-entry-2",
       "userId": "demo-user-elena-vance",
-      "entryDate": "2026-10-08",
+      "entryDate": "2026-10-10",
       "originalText": "Attended a two-hour roadmap alignment meeting with cross-functional stakeholders. The circular debate over vague feature requests was exhausting and left me feeling drained. But afterwards, I grabbed a whiteboard and sketched a clear visual user flow linking customer pain points to technical trade-offs. Once everyone could see the journey visually, the tension dissolved.",
       "wordCount": 58,
-      "createdAt": "2026-10-08T17:22:46.275Z",
-      "updatedAt": "2026-10-08T17:22:46.275Z",
+      "createdAt": "2026-10-10T10:48:58.952Z",
+      "updatedAt": "2026-10-10T10:48:58.952Z",
       "analysisStatus": "completed",
-      "analyzedAt": "2026-10-08T17:22:46.275Z",
+      "analyzedAt": "2026-10-10T10:48:58.952Z",
       "isDemo": true
     },
     "demo-entry-3": {
       "id": "demo-entry-3",
       "userId": "demo-user-elena-vance",
-      "entryDate": "2026-10-10",
+      "entryDate": "2026-10-12",
       "originalText": "Analyzed SQL query logs and user drop-off metrics from last week’s checkout release. I noticed an anomaly where users stalled right before payment confirmation. Rather than just filing a bug ticket, I wrote a one-page synthesis explaining the UX hurdle and suggested a cleaner fallback flow. Digging into the raw data and turning it into a tangible design solution energized me.",
       "wordCount": 66,
-      "createdAt": "2026-10-10T17:22:46.275Z",
-      "updatedAt": "2026-10-10T17:22:46.275Z",
+      "createdAt": "2026-10-12T10:48:58.952Z",
+      "updatedAt": "2026-10-12T10:48:58.952Z",
       "analysisStatus": "completed",
-      "analyzedAt": "2026-10-10T17:22:46.275Z",
+      "analyzedAt": "2026-10-12T10:48:58.952Z",
       "isDemo": true
     },
     "demo-entry-4": {
       "id": "demo-entry-4",
       "userId": "demo-user-elena-vance",
-      "entryDate": "2026-10-12",
+      "entryDate": "2026-10-14",
       "originalText": "Paired for an hour with a junior frontend engineer who was struggling to understand asynchronous error boundaries in React. Instead of just fixing it for them, we drew out how errors propagate up the component tree and built an interactive sandbox example together. Seeing their eyes light up when the concept clicked reminded me how much I love teaching and translating complex ideas.",
       "wordCount": 68,
-      "createdAt": "2026-10-12T17:22:46.275Z",
-      "updatedAt": "2026-10-12T17:22:46.275Z",
+      "createdAt": "2026-10-14T10:48:58.953Z",
+      "updatedAt": "2026-10-14T10:48:58.953Z",
       "analysisStatus": "completed",
-      "analyzedAt": "2026-10-12T17:22:46.275Z",
+      "analyzedAt": "2026-10-14T10:48:58.953Z",
       "isDemo": true
     },
     "demo-entry-5": {
       "id": "demo-entry-5",
       "userId": "demo-user-elena-vance",
-      "entryDate": "2026-10-14",
+      "entryDate": "2026-10-16",
       "originalText": "Today I built a complete working prototype of the milestone verification panel with responsive touch states and real data bindings. I tested edge cases like empty states and server timeouts, ensuring the feedback loops feel instant. Shipping a real, usable vertical slice in a single focused day felt fantastic.",
       "wordCount": 52,
-      "createdAt": "2026-10-14T17:22:46.275Z",
-      "updatedAt": "2026-10-14T17:22:46.275Z",
+      "createdAt": "2026-10-16T10:48:58.953Z",
+      "updatedAt": "2026-10-16T10:48:58.953Z",
       "analysisStatus": "completed",
-      "analyzedAt": "2026-10-14T17:22:46.275Z",
+      "analyzedAt": "2026-10-16T10:48:58.953Z",
       "isDemo": true
     },
     "entry-1792081852843-vqi8": {
@@ -397,7 +410,7 @@
       ],
       "reflectionQuestion": "What specific tools or mental models helped you eliminate the other variables during concurrency tracing?",
       "modelUsed": "gemini-3.8-flash",
-      "createdAt": "2026-10-06T17:22:46.275Z"
+      "createdAt": "2026-10-08T10:48:58.953Z"
     },
     "demo-entry-2": {
       "id": "analysis-2",
@@ -480,7 +493,7 @@
       ],
       "reflectionQuestion": "How might you introduce visual artifacts earlier in stakeholder conversations to prevent circular debates?",
       "modelUsed": "gemini-3.8-flash",
-      "createdAt": "2026-10-08T17:22:46.275Z"
+      "createdAt": "2026-10-10T10:48:58.953Z"
     },
     "demo-entry-3": {
       "id": "analysis-3",
@@ -551,7 +564,7 @@
       ],
       "reflectionQuestion": "What other user journeys in your application might benefit from proactive SQL drop-off telemetry?",
       "modelUsed": "gemini-3.8-flash",
-      "createdAt": "2026-10-10T17:22:46.275Z"
+      "createdAt": "2026-10-12T10:48:58.953Z"
     },
     "demo-entry-4": {
       "id": "analysis-4",
@@ -617,7 +630,7 @@
       ],
       "reflectionQuestion": "Could creating reusable internal engineering guides capture this teaching leverage at scale?",
       "modelUsed": "gemini-3.8-flash",
-      "createdAt": "2026-10-12T17:22:46.275Z"
+      "createdAt": "2026-10-14T10:48:58.953Z"
     },
     "demo-entry-5": {
       "id": "analysis-5",
@@ -683,7 +696,7 @@
       ],
       "reflectionQuestion": "What was the key constraint that allowed you to complete the entire slice within a single day?",
       "modelUsed": "gemini-3.8-flash",
-      "createdAt": "2026-10-14T17:22:46.275Z"
+      "createdAt": "2026-10-16T10:48:58.953Z"
     },
     "entry-1792081852843-vqi8": {
       "id": "analysis-1792082176842-mg4qj",
@@ -896,7 +909,7 @@
         ],
         "evidenceStrength": "supported_by_repeated_observations",
         "status": "active",
-        "createdAt": "2026-10-15T17:22:46.275Z"
+        "createdAt": "2026-10-17T10:48:58.953Z"
       },
       {
         "id": "career-2",
@@ -948,7 +961,7 @@
         ],
         "evidenceStrength": "promising_match",
         "status": "saved",
-        "createdAt": "2026-10-15T17:22:46.275Z"
+        "createdAt": "2026-10-17T10:48:58.953Z"
       },
       {
         "id": "career-3",
@@ -995,7 +1008,7 @@
         ],
         "evidenceStrength": "early_hypothesis",
         "status": "saved",
-        "createdAt": "2026-10-15T17:22:46.275Z"
+        "createdAt": "2026-10-17T10:48:58.953Z"
       }
     ]
   },
@@ -1007,8 +1020,8 @@
       "careerTitle": "Product Engineer (Technical Product Builder)",
       "weeklyTimeBudget": 6,
       "overallStatus": "active",
-      "createdAt": "2026-10-08T17:22:46.275Z",
-      "updatedAt": "2026-10-15T17:22:46.275Z",
+      "createdAt": "2026-10-10T10:48:58.953Z",
+      "updatedAt": "2026-10-17T10:48:58.953Z",
       "phases": [
         {
           "id": "phase-1",
@@ -1033,7 +1046,7 @@
               ],
               "estimatedDuration": "1 week (4-6 hours)",
               "status": "completed",
-              "completedAt": "2026-10-10T17:22:46.275Z"
+              "completedAt": "2026-10-12T10:48:58.953Z"
             },
             {
               "id": "m-1-2",
@@ -1052,7 +1065,7 @@
               ],
               "estimatedDuration": "1 week (5 hours)",
               "status": "completed",
-              "completedAt": "2026-10-12T17:22:46.275Z"
+              "completedAt": "2026-10-14T10:48:58.953Z"
             }
           ]
         },
@@ -1138,13 +1151,13 @@
         "milestoneId": "m-2-1",
         "milestoneTitle": "Build an Interactive Vertical Verification Slice",
         "journalEntryId": "demo-entry-5",
-        "journalEntryDate": "2026-10-14",
+        "journalEntryDate": "2026-10-16",
         "evidenceExcerpt": "Today I built a complete working prototype of the milestone verification panel with responsive touch states and real data bindings... tested edge cases like empty states and server timeouts.",
         "classification": "strong_progress",
         "confidence": 0.94,
         "proposedAction": "complete_milestone",
         "userConfirmationStatus": "pending",
-        "createdAt": "2026-10-14T17:22:46.275Z"
+        "createdAt": "2026-10-16T10:48:58.953Z"
       },
       {
         "id": "event-2",
@@ -1153,13 +1166,13 @@
         "milestoneId": "m-1-1",
         "milestoneTitle": "Define Problem Statements from Raw Telemetry",
         "journalEntryId": "demo-entry-3",
-        "journalEntryDate": "2026-10-10",
+        "journalEntryDate": "2026-10-12",
         "evidenceExcerpt": "wrote a one-page synthesis explaining the UX hurdle and suggested a cleaner fallback flow. Digging into the raw data and turning it into a tangible design solution energized me.",
         "classification": "milestone_complete",
         "confidence": 0.96,
         "proposedAction": "complete_milestone",
         "userConfirmationStatus": "confirmed",
-        "createdAt": "2026-10-10T17:22:46.275Z"
+        "createdAt": "2026-10-12T10:48:58.953Z"
       }
     ]
   },
@@ -1168,8 +1181,8 @@
       {
         "id": "report-demo-1",
         "userId": "demo-user-elena-vance",
-        "weekStart": "2026-10-08",
-        "weekEnd": "2026-10-15",
+        "weekStart": "2026-10-10",
+        "weekEnd": "2026-10-17",
         "summary": "This week revealed a clear pattern: you thrive when combining analytical problem-solving with tangible visual outcomes. Mentoring a teammate and building an interactive vertical prototype were your highest energy peaks.",
         "skillsDemonstrated": [
           "Root Cause Analysis",
@@ -1192,7 +1205,7 @@
         ],
         "roadmapProgress": "Completed 2 foundational milestones in the Product Engineer track. Milestone 2.1 (Interactive Vertical Slice) has strong observed evidence awaiting confirmation.",
         "weeklyQuestion": "How could you structure next week to guard at least two 3-hour deep focus blocks for prototype exploration?",
-        "createdAt": "2026-10-15T17:22:46.275Z"
+        "createdAt": "2026-10-17T10:48:58.953Z"
       }
     ]
   },
@@ -1316,6 +1329,18 @@
       "userId": "demo-user-elena-vance",
       "createdAt": "2026-10-15T17:22:46.276Z",
       "expiresAt": "2026-11-14T17:22:46.276Z"
+    },
+    "cdt_1792231740713_i2ri84dkttf6b0ke": {
+      "token": "cdt_1792231740713_i2ri84dkttf6b0ke",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-17T10:09:00.713Z",
+      "expiresAt": "2026-11-16T10:09:00.713Z"
+    },
+    "cdt_1792234138954_c8ggtudl59wfd5rx": {
+      "token": "cdt_1792234138954_c8ggtudl59wfd5rx",
+      "userId": "demo-user-elena-vance",
+      "createdAt": "2026-10-17T10:48:58.954Z",
+      "expiresAt": "2026-11-16T10:48:58.954Z"
     }
   }
 }

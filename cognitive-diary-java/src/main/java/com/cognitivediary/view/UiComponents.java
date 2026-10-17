@@ -46,6 +46,7 @@ public class UiComponents {
                             %s
                             %s
                             %s
+                            %s
                         </nav>
                     </div>
                     <div class="flex items-center gap-3">
@@ -63,6 +64,7 @@ public class UiComponents {
                 navLink("/strengths", "Strengths", "strengths".equals(activeTab)),
                 navLink("/careers", "Careers", "careers".equals(activeTab)),
                 navLink("/roadmap", "Roadmap", "roadmap".equals(activeTab)),
+                navLink("/architecture", "Architecture", "architecture".equals(activeTab)),
                 navLink("/settings", "Settings", "settings".equals(activeTab)),
                 isDemo ? "<span class=\"text-[11px] font-medium text-[#3E5A46] bg-[#EEF4EE] px-2.5 py-1 rounded border border-[#DCE7DC]\">Demo Persona</span>" : ""
             );

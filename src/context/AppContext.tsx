@@ -19,6 +19,7 @@ export type TabKey =
   | 'careers'
   | 'roadmap'
   | 'insights'
+  | 'architecture'
   | 'settings';
 
 interface AppContextValue {
