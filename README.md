@@ -1,105 +1,147 @@
-# Cognitive Diary · AI Career Discovery & Reflection Platform
+# Cognitive Diary (Java Edition)
 
-An evidence-based personal growth and career discovery platform that transforms everyday reflective journaling into actionable career roadmaps, natural strengths synthesis, and milestone tracking powered by Google Gemini.
+Cognitive Diary is a Java-based personal career growth and reflective journaling application. It analyzes daily work reflections to identify demonstrated strengths, track milestone progress on an adaptive roadmap, and explore evidence-grounded career hypotheses.
 
----
-
-## Editions Included in this Repository
-
-This repository includes two complete, production-ready editions:
-
-1. **Full-Stack React + TypeScript + Express Edition** (Root directory)
-   - Vite, React 19, TypeScript, Tailwind CSS, Lucide Icons
-   - Express server (`server.ts`) with disk-backed JSON persistence and Google Gemini AI integration
-   - Automated test suite with 23 passing integration tests (`npm test`)
-
-2. **100% Native Java Edition** (`cognitive-diary-java/`)
-   - **Java 17/21 & Spring Boot 3**: Fully modular enterprise architecture with clean separation of concerns.
-   - **Pure Java Web View Engine**: Complete server-side rendered views (`OverviewView`, `JournalView`, `ArchiveView`, `StrengthsView`, `CareersView`, `RoadmapView`, `SettingsView`, `LoginView`) with zero external HTML templates.
-   - **Java Desktop GUI (Swing)**: Native desktop application (`CognitiveDiaryDesktopGui.java`) featuring multi-tab reflection management, asynchronous `SwingWorker` threads, and live table data binding.
-   - **Database Connectivity (JDBC)**: Parameterized prepared statements, connection pooling, schema migrations, and manual ACID transactions (`setAutoCommit(false)`, `commit()`, `rollback()`) across SQLite and H2 databases.
-   - **Multithreading & Concurrency**: Custom `ThreadPoolExecutor` with named worker threads, `ReentrantReadWriteLock` synchronization, and atomic counters (`AsyncSynthesisEngine.java`).
-   - **Jakarta Servlets & Filters**: Standard Java EE `HttpServlet` (`JournalApiServlet.java`) handling REST operations and `AuthenticationFilter.java` for request filtering.
-   - **Object-Oriented Design**: Polymorphic class hierarchy (`BaseEntity` extended by `JournalEntryEntity`, `UserEntity`, `MilestoneEntity`), generic interfaces (`CrudRepository<T, ID>`), and custom domain exceptions (`CognitiveDiaryException`, `DatabaseOperationException`, `DuplicateSubmissionException`, `EntityNotFoundException`).
+The project includes both a **Spring Boot web application** with server-side rendered Java views and a **native Java Swing desktop GUI**.
 
 ---
 
-## Key Features
+## What the Application Does
 
-- **Empirical Skill Extraction**: Extracts technical competencies and working habits with verbatim evidence quotes from daily journal reflections.
-- **Energy Correlator**: Identifies energizing vs. draining activities to guide sustainable work choices.
-- **Career Hypotheses Generator**: Synthesizes concrete target roles grounded in longitudinal reflection evidence.
-- **Human-in-the-Loop Roadmap Progression**: Milestones require user confirmation when ambiguous progress or completion is detected.
-- **Data Sovereignty & GDPR Compliance**: One-click complete JSON export and irreversible account wipe.
-- **Deduplication & AI Resilience**: Protects against rapid repeat submissions and handles Gemini capacity backoff with exponential retries.
-- **Interactive System Architecture & Concepts Hub**: Built directly into the website to inspect live JDBC connectivity, thread pool metrics, and OOP class hierarchies.
+- **Overview Dashboard**: Displays reflection metrics, identified strengths, active roadmap status, and recent entries.
+- **Daily Reflection Journal**: An editor for recording daily work notes with real-time word counting, coaching prompts, and instant AI skill extraction.
+- **Reflection Archive**: Searchable history of past reflections with word counts, dates, and competency summaries.
+- **Natural Strengths**: Catalog of technical and cognitive skills extracted from journal entries with verbatim evidence quotes and confidence ratings.
+- **Career Discovery**: Career hypotheses grounded in journal evidence, providing a "Why It Fits" rationale and low-risk safe experiments.
+- **Career Roadmap**: Paced progression phases with milestones. Detects accomplishments from reflections and prompts the user to confirm or reject progress.
+- **System Architecture Inspector**: A live in-app dashboard showing the underlying Java OOP hierarchy, JDBC connection status, and thread pool metrics.
+- **Data Sovereignty & Settings**: Allows users to download a full JSON export of their data or permanently wipe all account records.
 
 ---
 
-## Quickstart: React / Node.js Edition
+## Java Architecture & Technologies Used
 
-```bash
-# Install dependencies
-npm install
+- **Language & Platform**: Java 17+ / Java 21
+- **Framework**: Spring Boot 3.3 (`spring-boot-starter-web`, `spring-boot-starter-security`)
+- **Database (JDBC)**:
+  - SQLite embedded database (`jdbc:sqlite:data/cognitive_diary.db`) managed via `DatabaseConnectionManager.java` (Singleton pattern).
+  - Data access through `JdbcJournalRepository.java` using parameterized `PreparedStatement` and manual transactions (`setAutoCommit(false)`, `commit()`, `rollback()`).
+  - Fallback atomic JSON storage in `JsonDatabaseService.java`.
+- **Object-Oriented Design (OOP)**:
+  - Abstract base class `BaseEntity.java` extended by `JournalEntryEntity.java`, `UserEntity.java`, and `MilestoneEntity.java`, using method overriding (`getEntitySummary()`) for runtime polymorphism.
+  - Generic interface `CrudRepository<T, ID>.java` and specialized `JournalRepository.java`.
+  - Custom exception hierarchy: `CognitiveDiaryException`, `DatabaseOperationException`, `DuplicateSubmissionException`, `EntityNotFoundException`.
+- **Multithreading & Concurrency**:
+  - `AsyncSynthesisEngine.java`: Custom `ThreadPoolExecutor` with named worker threads (`SynthesisWorker-N`) and `ReentrantReadWriteLock` for thread-safe access.
+  - `SwingWorker` threads in the desktop GUI to keep the interface responsive during database queries.
+- **Servlets & Web Layer**:
+  - `JournalApiServlet.java` extending `HttpServlet` with `doGet`, `doPost`, and `doDelete`.
+  - `AuthenticationFilter.java` implementing `jakarta.servlet.Filter` for CORS handling and request tracking.
+  - Pure Java HTML view renderers (`com.cognitivediary.view.*`) generating all web pages directly from Java without external template files.
+- **Desktop GUI (Swing)**:
+  - `CognitiveDiaryDesktopGui.java`: Full `JFrame` desktop application with `JTabbedPane`, `JTextArea`, and `JTable` connected directly to the JDBC repository.
+- **AI Integration**:
+  - `GeminiAiService.java`: Calls the Google Gemini API using native Java 21 `HttpClient` with JSON parsing and fallback error handling.
 
-# Run automated audit and integration test suite
-npm test
+---
 
-# Run local development server (port 3000)
-npm run dev
+## Project Structure
+
+```
+cognitive-diary-java/
+├── pom.xml                                      # Maven build descriptor
+└── src/
+    ├── main/
+    │   ├── java/com/cognitivediary/
+    │   │   ├── CognitiveDiaryApplication.java   # Spring Boot entry point
+    │   │   ├── concurrency/
+    │   │   │   └── AsyncSynthesisEngine.java    # ThreadPoolExecutor & concurrency locks
+    │   │   ├── controller/
+    │   │   │   ├── AuthController.java          # Authentication & session endpoints
+    │   │   │   ├── JournalController.java       # Journal CRUD & AI retry endpoints
+    │   │   │   ├── AccountAndRoadmapController.java # Roadmap & data export endpoints
+    │   │   │   └── WebController.java           # Serves pure Java HTML views
+    │   │   ├── database/
+    │   │   │   ├── DatabaseConnectionManager.java # JDBC connection manager (SQLite/H2)
+    │   │   │   └── JdbcJournalRepository.java   # JDBC operations with PreparedStatements
+    │   │   ├── exception/
+    │   │   │   ├── CognitiveDiaryException.java # Custom domain base exception
+    │   │   │   ├── DatabaseOperationException.java
+    │   │   │   ├── DuplicateSubmissionException.java
+    │   │   │   ├── EntityNotFoundException.java
+    │   │   │   └── AiSynthesisException.java
+    │   │   ├── gui/
+    │   │   │   └── CognitiveDiaryDesktopGui.java # Native Java Swing desktop interface
+    │   │   ├── model/
+    │   │   │   ├── BaseEntity.java              # Abstract base entity
+    │   │   │   ├── JournalEntryEntity.java      # Subclass of BaseEntity
+    │   │   │   ├── UserEntity.java              # Subclass of BaseEntity
+    │   │   │   ├── MilestoneEntity.java         # Subclass of BaseEntity
+    │   │   │   └── Models.java                  # Domain records
+    │   │   ├── repository/
+    │   │   │   ├── CrudRepository.java          # Generic repository interface
+    │   │   │   └── JournalRepository.java       # Specialized repository interface
+    │   │   ├── security/
+    │   │   │   └── SecurityConfig.java          # Spring Security token filter
+    │   │   ├── service/
+    │   │   │   ├── JournalService.java          # Reflection business logic
+    │   │   │   ├── CareerDiscoveryService.java  # Skill aggregation & career hypotheses
+    │   │   │   ├── RoadmapService.java          # Roadmap progression & milestone reviews
+    │   │   │   ├── AnalyticsService.java        # Energy balance analytics
+    │   │   │   ├── GeminiAiService.java         # Gemini AI REST client (Java HttpClient)
+    │   │   │   └── JsonDatabaseService.java     # Thread-safe atomic persistence
+    │   │   ├── servlet/
+    │   │   │   ├── JournalApiServlet.java       # Jakarta HttpServlet (GET, POST, DELETE)
+    │   │   │   └── AuthenticationFilter.java    # Jakarta Servlet Filter
+    │   │   └── view/
+    │   │       ├── UiComponents.java            # Shared layout, header, footer in Java
+    │   │       ├── OverviewView.java            # Dashboard view
+    │   │       ├── JournalView.java             # Reflection editor view
+    │   │       ├── ArchiveView.java             # Archive & search view
+    │   │       ├── StrengthsView.java           # Strengths catalog view
+    │   │       ├── CareersView.java             # Career hypotheses view
+    │   │       ├── RoadmapView.java             # Career roadmap view
+    │   │       ├── SettingsView.java            # Settings & GDPR export view
+    │   │       ├── LoginView.java               # Sign-in & demo persona view
+    │   │       └── ArchitectureView.java        # System architecture inspector view
+    │   └── resources/
+    │       └── application.properties           # Spring Boot server & model configuration
+    └── test/
+        └── java/com/cognitivediary/
+            └── CognitiveDiaryTests.java         # JUnit integration test suite
 ```
 
 ---
 
-## Quickstart: 100% Java Edition
+## How to Run
 
-### 1. Web Application (Spring Boot & Pure Java Views)
+### 1. Run the Java Web Application
 ```bash
 cd cognitive-diary-java
-
-# Build application with Maven
 mvn clean package -DskipTests
-
-# Run the Spring Boot application (port 3000)
 mvn spring-boot:run
 ```
-Access the Java web app at `http://localhost:3000`.
+Open **`http://localhost:3000`** in your browser.
 
-### 2. Desktop GUI Application (Java Swing)
+### 2. Run the Java Desktop GUI (Swing)
 ```bash
 cd cognitive-diary-java
-
-# Compile and launch Desktop GUI
 mvn compile
 mvn exec:java -Dexec.mainClass="com.cognitivediary.gui.CognitiveDiaryDesktopGui"
+```
+A desktop window will open with tabs to write reflections, search records via JDBC, and test database connections.
+
+### 3. Run the Unit & Integration Tests
+```bash
+cd cognitive-diary-java
+mvn test
 ```
 
 ---
 
 ## Environment Variables
 
-| Variable | Description | Default |
-| :--- | :--- | :--- |
-| `GEMINI_API_KEY` | Google Gemini API key for real-time analysis | (Required for live AI synthesis) |
-| `PORT` | HTTP port for server listener | `3000` |
-
----
-
-## Pushing to Your GitHub Repository
-
-```bash
-# 1. Configure git identity (replace with your info)
-git config user.name "Your Name"
-git config user.email "your.email@example.com"
-
-# 2. Stage and commit all files
-git add .
-git commit -m "feat: complete Cognitive Diary in React/TypeScript and 100% Java Edition"
-git branch -M main
-
-# 3. Connect to your GitHub repository (replace with your repo URL)
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
-
-# 4. Push with your GitHub Personal Access Token
-git push -u origin main
-```
+| Variable | Description |
+| :--- | :--- |
+| `GEMINI_API_KEY` | *(Optional)* Google Gemini API key for real-time skill extraction and analysis |
+| `PORT` | *(Optional)* Server port (defaults to `3000`) |
