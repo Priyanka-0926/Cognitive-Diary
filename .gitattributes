@@ -1,7 +1,14 @@
 # GitHub Linguist Language Detection Configuration
-# Configures GitHub language statistics bar to recognize Java as the primary language
+# Enforces Java as the 100% dominant language for the repository
 
-# Mark client-side Node/TypeScript build tools and React templates as vendored
+# Exclude all HTML files completely from language statistics
+*.html linguist-vendored=true
+*.html linguist-detectable=false
+*.html linguist-documentation=true
+*.htm linguist-vendored=true
+*.htm linguist-detectable=false
+
+# Exclude client-side Node/TypeScript build tools, React bundles, and templates
 *.ts linguist-vendored=true
 *.tsx linguist-vendored=true
 *.js linguist-vendored=true
@@ -9,10 +16,9 @@
 *.cjs linguist-vendored=true
 *.json linguist-detectable=false
 *.css linguist-detectable=false
-*.html linguist-detectable=false
 *.xml linguist-detectable=false
 
-# Mark directories
+# Mark directories as vendored/third-party
 src/** linguist-vendored=true
 server/** linguist-vendored=true
 tests/** linguist-vendored=true
@@ -20,6 +26,7 @@ server.ts linguist-vendored=true
 vite.config.ts linguist-vendored=true
 tsconfig.json linguist-vendored=true
 package.json linguist-vendored=true
+index.html linguist-vendored=true
 
 # Ensure Java is detected as the primary application language
 *.java linguist-detectable=true

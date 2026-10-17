@@ -1,11 +1,14 @@
 package com.cognitivediary.controller;
 
 import com.cognitivediary.model.Models.*;
+import com.cognitivediary.service.CareerDiscoveryService;
 import com.cognitivediary.service.GeminiAiService;
 import com.cognitivediary.service.JsonDatabaseService;
+import com.cognitivediary.service.RoadmapService;
+import com.cognitivediary.view.*;
+import org.springframework.http.MediaType;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,15 +18,23 @@ public class WebController {
 
     private final JsonDatabaseService dbService;
     private final GeminiAiService aiService;
+    private final CareerDiscoveryService careerService;
+    private final RoadmapService roadmapService;
 
-    public WebController(JsonDatabaseService dbService, GeminiAiService aiService) {
+    public WebController(
+            JsonDatabaseService dbService,
+            GeminiAiService aiService,
+            CareerDiscoveryService careerService,
+            RoadmapService roadmapService
+    ) {
         this.dbService = dbService;
         this.aiService = aiService;
+        this.careerService = careerService;
+        this.roadmapService = roadmapService;
     }
 
     private User getEffectiveUser(User authUser) {
         if (authUser != null) return authUser;
-        // Default to demo user if not logged in to make browsing immediate
         User demo = dbService.getUser("demo-persona-elena");
         if (demo == null) {
             demo = new User(
@@ -46,42 +57,31 @@ public class WebController {
         return "redirect:/overview";
     }
 
-    @GetMapping("/overview")
-    public String overview(@AuthenticationPrincipal User user, Model model) {
+    @GetMapping(value = "/overview", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public String overview(@AuthenticationPrincipal User user) {
         User effective = getEffectiveUser(user);
         List<JournalEntry> entries = dbService.getJournalEntries(effective.id());
-        Roadmap roadmap = dbService.getRoadmap(effective.id());
-        List<ProgressEvent> events = dbService.getProgressEvents(effective.id());
-
-        model.addAttribute("user", effective);
-        model.addAttribute("entries", entries);
-        model.addAttribute("roadmap", roadmap);
-        model.addAttribute("events", events);
-        model.addAttribute("activeTab", "overview");
-        return "overview";
+        Roadmap roadmap = roadmapService.getActiveRoadmap(effective.id());
+        return OverviewView.render(effective, entries, roadmap);
     }
 
-    @GetMapping("/journal")
+    @GetMapping(value = "/journal", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
     public String journal(
             @AuthenticationPrincipal User user,
-            @RequestParam(required = false) String id,
-            Model model
+            @RequestParam(required = false) String id
     ) {
         User effective = getEffectiveUser(user);
         JournalEntry editing = id != null ? dbService.getJournalEntry(effective.id(), id) : null;
-
-        model.addAttribute("user", effective);
-        model.addAttribute("editing", editing);
-        model.addAttribute("aiConfigured", aiService.isConfigured());
-        model.addAttribute("activeTab", "journal");
-        return "journal";
+        return JournalView.render(effective, editing, aiService.isConfigured());
     }
 
-    @GetMapping("/archive")
+    @GetMapping(value = "/archive", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
     public String archive(
             @AuthenticationPrincipal User user,
-            @RequestParam(required = false) String search,
-            Model model
+            @RequestParam(required = false) String search
     ) {
         User effective = getEffectiveUser(user);
         List<JournalEntry> entries = dbService.getJournalEntries(effective.id());
@@ -94,58 +94,43 @@ public class WebController {
                     .toList();
         }
 
-        model.addAttribute("user", effective);
-        model.addAttribute("entries", entries);
-        model.addAttribute("searchQuery", search != null ? search : "");
-        model.addAttribute("activeTab", "archive");
-        return "archive";
+        return ArchiveView.render(effective, entries, search);
     }
 
-    @GetMapping("/strengths")
-    public String strengths(@AuthenticationPrincipal User user, Model model) {
+    @GetMapping(value = "/strengths", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public String strengths(@AuthenticationPrincipal User user) {
         User effective = getEffectiveUser(user);
-        List<JournalEntry> entries = dbService.getJournalEntries(effective.id());
-
-        model.addAttribute("user", effective);
-        model.addAttribute("entries", entries);
-        model.addAttribute("activeTab", "strengths");
-        return "strengths";
+        List<AggregatedSkill> skills = careerService.aggregateUserSkills(effective.id());
+        return StrengthsView.render(effective, skills);
     }
 
-    @GetMapping("/careers")
-    public String careers(@AuthenticationPrincipal User user, Model model) {
+    @GetMapping(value = "/careers", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public String careers(@AuthenticationPrincipal User user) {
         User effective = getEffectiveUser(user);
-        List<JournalEntry> entries = dbService.getJournalEntries(effective.id());
-
-        model.addAttribute("user", effective);
-        model.addAttribute("entries", entries);
-        model.addAttribute("activeTab", "careers");
-        return "careers";
+        List<CareerHypothesis> hypotheses = careerService.getOrSynthesizeHypotheses(effective.id());
+        return CareersView.render(effective, hypotheses);
     }
 
-    @GetMapping("/roadmap")
-    public String roadmap(@AuthenticationPrincipal User user, Model model) {
+    @GetMapping(value = "/roadmap", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public String roadmap(@AuthenticationPrincipal User user) {
         User effective = getEffectiveUser(user);
-        Roadmap roadmap = dbService.getRoadmap(effective.id());
-        List<ProgressEvent> events = dbService.getProgressEvents(effective.id());
-
-        model.addAttribute("user", effective);
-        model.addAttribute("roadmap", roadmap);
-        model.addAttribute("events", events);
-        model.addAttribute("activeTab", "roadmap");
-        return "roadmap";
+        Roadmap roadmap = roadmapService.getActiveRoadmap(effective.id());
+        return RoadmapView.render(effective, roadmap);
     }
 
-    @GetMapping("/settings")
-    public String settings(@AuthenticationPrincipal User user, Model model) {
+    @GetMapping(value = "/settings", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public String settings(@AuthenticationPrincipal User user) {
         User effective = getEffectiveUser(user);
-        model.addAttribute("user", effective);
-        model.addAttribute("activeTab", "settings");
-        return "settings";
+        return SettingsView.render(effective);
     }
 
-    @GetMapping("/login")
-    public String login(Model model) {
-        return "login";
+    @GetMapping(value = "/login", produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public String login() {
+        return LoginView.render();
     }
 }
